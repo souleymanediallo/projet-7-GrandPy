@@ -1,0 +1,20 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="fw-light mt-4">Avez-vous une question ?</h1>
+                <p class="lead text-muted">Le Papy Robot est disponible 7J/7 pour vous répondre</p>
+                <h2 class="h6">En plus, il a une belle histoire à raconter ...</h2>
+                <!--form -->
+                <form class="form-row">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Salut GrandPy ! Est-ce que tu connais l'adresse d'OpenClassrooms ?" />
+                        <span class="input-group-append"><button class="btn btn-danger btn-lg">Rechercher</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
