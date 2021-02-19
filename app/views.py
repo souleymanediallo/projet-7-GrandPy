@@ -1,8 +1,6 @@
+from flask import Flask, render_template
 
-
-import os
-
-from flask import Flask, render_template, request, jsonify
+from app.google_maps import GoogleMaps
 
 app = Flask(__name__)
 app.config.from_object('config')
