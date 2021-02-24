@@ -1,4 +1,4 @@
-BASE_STOP_WORDS = [
+STOP_WORDS = [
     "a",
     "abord",
     "absolument",
