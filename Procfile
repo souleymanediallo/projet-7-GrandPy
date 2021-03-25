@@ -1,1 +1,1 @@
-web: gunicorn run:Projet7GrandPy
+web: gunicorn app:run
