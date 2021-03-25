@@ -1,6 +1,3 @@
-#map {
-    height: 100%;
-}
 
 /* Optional: Makes the sample page fill the window. */
 html,
@@ -8,19 +5,54 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #000000;
 }
 
-#floating-panel {
+#map {
+    height: 100%;
+}
+
+.map {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#gifs {
+    flex-basis: 45%;
+    column-count: 3;
+    column-gap: 0px;
+    padding: 1em;
+}
+
+#gifs img {
+    width: 30%;
+}
+
+#error {
+    display: none;
+    color: #000;
+    background-color: rgba(255, 0, 0, 0.2);
+    min-height: 3em;
+    width: 100%;
+}
+
+.waiting {
+    display: none;
     position: absolute;
-    top: 10px;
-    left: 25%;
-    z-index: 5;
-    background-color: #fff;
-    padding: 5px;
-    border: 1px solid #999;
-    text-align: center;
-    font-family: "Roboto", "sans-serif";
-    line-height: 30px;
-    padding-left: 10px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px red dotted;
+    animation: spin 4s linear infinite;
+    z-index: 10;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }

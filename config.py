@@ -1,4 +1,4 @@
-SECRET_KEY_API_GOOGLE = "AIzaSyBq0Z8t8tXzBar-u4r3hC0RRXmJ3j8M3yQ"
+SECRET_KEY_API_GOOGLE = "AIzaSyC3taP9K0zXslYQWg_AXQs11XTZKmJkYkA"
 
 GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 
