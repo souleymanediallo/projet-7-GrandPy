@@ -39,7 +39,7 @@ Lancer la commande
 pytest tests.py
 ```
 
-## Crée avec :
+## Crée avec
 
 * Python 3.8
 * Flask 
@@ -48,7 +48,7 @@ pytest tests.py
 * Google API
 * Wikipedia API
 
-## Auteur :
+## Auteur
 
 Souleymane Diallo 
 Développeur Python, étudiant openclassrooms
