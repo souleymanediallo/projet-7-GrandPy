@@ -1,23 +1,27 @@
-import json
 from app import googlemaps
+from config import SECRET_KEY_API_GOOGLE
 
 
-def test_search_position(mykey):
-    address = 'YYYY'
-    latitude = 66.00
-    longitude = 2.000
-    results = [{
-        "formatted_address": address,
-        "geometry": {"location": {"lng": longitude, "lat": latitude}}
-    }]
+class TestGMaps:
 
-    class MyClient:
-        def __init__(self, key):
-            pass
+    def test_gmaps_result(self, monkeypatch):
 
-        def geocode(self, sentence):
-            return results
+        result = {
+            "latitude": 48.856614,
+            "longitude": 2.3522219,
+            "address": "Paris, France"
+        }
 
-    mykey.setattr("googlemaps.Client", MyClient)
-    gmaps = googlemaps.GoogleMaps()
-    results = gmaps.search("Hello")
+        def mockreturn(self, question):
+            return result
+        place = "paris"
+        monkeypatch.setattr(googlemaps.GoogleMaps, 'get_position', mockreturn)
+        gmap = googlemaps.GoogleMaps('api_key')
+        gmap_result = gmap.get_position(place)
+
+        assert gmap_result['address'] == "Paris, France"
+        assert gmap_result['latitude'] == 48.856614
+        assert gmap_result['longitude'] == 2.3522219
+
+
+
