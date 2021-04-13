@@ -2,7 +2,11 @@
 
 ## Contexte
 
-Il s’agit de créer une application web en utilisant le micro framework Flask avec les API Google maps et Wikipedia. Pour ce faire, un robot renvoie l’adresse, la carte google map et un récit sur un lieu demandé. Cela nécessite l’utilisation des fonctionnalités comme AJAX, les API de Google Maps et Mediawiki qui sont à respecter dans le cahier des charges tout comme les tests Driven Development et Mock.
+Il s’agit de créer une application web en utilisant le micro framework Flask avec les API Google maps et Wikipedia. 
+Pour ce faire, un robot renvoie l’adresse, la carte google map et un récit sur un lieu demandé. 
+Cela nécessite l’utilisation des fonctionnalités comme AJAX, 
+les API de Google Maps et Mediawiki qui sont à respecter dans le cahier des charges
+tout comme les tests Driven Development et Mock.
 
 ## Liens
 
