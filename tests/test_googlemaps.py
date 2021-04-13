@@ -1,7 +1,6 @@
 from app import googlemaps
 from config import SECRET_KEY_API_GOOGLE
 
-
 class TestGMaps:
 
     def test_gmaps_result(self, monkeypatch):
