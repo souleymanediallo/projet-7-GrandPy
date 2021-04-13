@@ -15,13 +15,30 @@ tout comme les tests Driven Development et Mock.
 
 ## Installation
 
-```python
-git clone https://github.com/souleymanediallo/projet-7-GrandPy.git
-pip install virtualenv
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python run.py
+Pour copier le projet en local, ouvrer un terminal et taper les commandes suivantes
+
+```clone
+$ git clone https://github.com/souleymanediallo/projet-7-GrandPy.git
+```
+
+Installer un environnement virtuel
+```virtualenv
+$ pip install virtualenv
+```
+
+Créer un environnement virtuel
+```venv
+$ virtualenv venv
+```
+
+Activer l'environnement virtuel
+```activate
+$ source venv/bin/activate
+```
+
+Intaller les dépendances du projet
+```installer
+$ pip install -r requirements.txt
 ```
 
 ## API 
@@ -31,12 +48,19 @@ Vous utiliserez l'API de Google Maps et celle de Media Wiki dans le fichier conf
 * [Google API](https://developers.google.com/)
 * [wikimedia API](https://www.mediawiki.org/wiki/API:Main_page)
 
+Demarrer l'application avec la commande suivante 
+
+```run
+$ python run.py
+```
+
 ## Tests 
 
-Lancer la commande
+Faire les tests
 
 ```test
 pytest tests.py
+flake8 app/
 ```
 
 ## Crée avec
