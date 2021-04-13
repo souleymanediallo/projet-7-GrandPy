@@ -3,6 +3,9 @@ import googlemaps
 
 
 class GoogleMaps:
+    """
+    Get the positions lat, lng and address
+    """
     def __init__(self):
         self.gmaps = googlemaps.Client(key=SECRET_KEY_API_GOOGLE)
 

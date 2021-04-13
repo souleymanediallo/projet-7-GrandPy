@@ -7,6 +7,9 @@ from app.grandpy import *
 
 
 def app_grandpy(question):
+    """
+    The main implementation of all the application logic
+    """
     parser = Parser(question)
     question = parser.clean()
     gmaps = GoogleMaps()
