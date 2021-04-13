@@ -7,13 +7,11 @@ function ajaxGet(url, callback) {
         } else {
             const message = "Adresse introuvable, reessayer une nouvelle adresse"
             alert(message);
-            // console.error(req.status + " " + req.statusText + " " + url);
         }
     });
     req.addEventListener("error", function () {
         const message = "Adresse introuvable, reessayer une nouvelle adresse"
         alert(message);
-        // console.error("Erreur réseau avec l'URL " + url);
     });
     req.send(null);
 }
@@ -27,13 +25,11 @@ function ajaxPost(url, data, callback, isJson){
         } else {
             const message = "Adresse introuvable, reessayer une nouvelle adresse"
             alert(message);
-            // console.error(req.status + " " + req.statusText + " " + url);
         }
     });
     req.addEventListener("error", function () {
         const message = "Adresse introuvable, reessayer une nouvelle adresse"
         alert(message);
-        //console.error("Erreur réseau avec l'URL " + url);
     });
     if (isJson) {
         req.setRequestHeader("Content-Type", "application/json");

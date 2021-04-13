@@ -22,4 +22,3 @@ def app_grandpy(question):
         "wikip_url": result_url,
     }
 
-
