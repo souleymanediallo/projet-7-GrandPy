@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 
-from app.bot import *
+from app.bot import app_grandpy
 
 app = Flask(__name__)
 
@@ -16,20 +16,3 @@ def question():
         question = request.form['submitText']
         answer = app_grandpy(question)
         return jsonify(answer)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

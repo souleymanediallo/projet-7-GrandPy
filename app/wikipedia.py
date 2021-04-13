@@ -6,6 +6,7 @@ class Wikipedia:
     Find the link with a short description
     Redirect to the full page
     """
+
     def search_for_pages(self, lat, lng):
         params = {
             "action": "query",
