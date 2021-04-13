@@ -5,6 +5,9 @@ class Parser:
     """
     Rearrange the words according to ask
     Return a word key with the given name
+    Delete characters
+    Remove spaces
+    Get the word  key
     """
     def __init__(self, sentence):
         self.sentence = sentence

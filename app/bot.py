@@ -9,6 +9,9 @@ from app.grandpy import *
 def app_grandpy(question):
     """
     The main implementation of all the application logic
+    Create the parser for the questions asked analyzer
+    Using the API Google maps
+    Using the API Wikipedia
     """
     parser = Parser(question)
     question = parser.clean()
